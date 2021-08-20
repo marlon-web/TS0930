@@ -1,0 +1,71 @@
+#conectividade-container {
+    position: relative;
+    margin-top: clamp(0.2rem, 7vw, 9rem);
+    height: clamp(16.5rem, 50vw, 55rem);
+    border: 1px solid white;
+    margin-bottom: 20rem;
+   color: white;
+   
+  }
+  #conect {
+      
+      width: 100%;
+      text-align: center;
+      
+      
+  }
+  #conect-text {
+      
+      position: absolute;
+      left: 19%;
+      
+  }
+  #conect-text h1{
+    font-family:  sans-serif;
+    font-weight: bold;
+    font-size: clamp(1rem,4vw,6rem);
+    letter-spacing: clamp(0.4rem,1rem,1.4rem);
+    border-bottom : 2px solid red;
+
+    
+  }
+  #conect-item div{
+    border: 1px solid blue;
+    margin: 5rem;
+  }
+  #conect-chromecast{
+    width:38%;
+    padding: 1rem;
+    position: absolute;
+    bottom:clamp(1rem,1vw,2rem);
+    left: clamp(1rem,1vw,2rem);;
+  }
+  #conect-chromecast img{
+    width: 44%;
+    margin-bottom: 1.4rem;
+  }
+  #conect-chromecast p{
+    font-size: 1.4rem
+  }
+  #conect-google{
+      display: none;
+    width: 25%;
+    padding: 1rem;
+  }
+  #conect-google img{
+    width: 70%;
+    margin-bottom: 1.4rem;
+  }
+  #conect-google p {
+    font-size: clamp(0.5rem,1.4rem,2rem);
+  }
+  #conect-apple {
+      display: none;
+  
+  }
+  #conect-apple img{
+  
+  }
+  #conect-apple p {
+  
+  }

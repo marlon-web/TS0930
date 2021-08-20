@@ -1,0 +1,962 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+@font-face {
+    src: url("../Font/Avenir.ttc");
+    font-family: Avenir;
+}
+
+body {
+    background: black;
+    position: relative;
+}
+
+#page-landing {
+    position: relative;
+    width: 99%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#top-container {
+    width: 100%;
+    height: clamp(13rem, 38vw, 45rem);
+    position: relative;
+}
+
+#TS9030-fundo-top {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#logotipo-top {
+    width: clamp(10rem, 30vw, 35rem);
+    position: relative;
+    left: clamp(2rem, 17vw, 20rem);
+    top: clamp(1rem, 3.6vw, 6rem);
+}
+
+#text-header {
+    font-family: Avenir, sans-serif;
+    color: white;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    width: clamp(50%, 55%, 58%);
+    position: absolute;
+    right: clamp(1rem, 2vw, 2rem);
+    bottom: clamp(0.1rem, 3.8vw, 6rem);
+    text-align: right;
+    line-height: 1.2;
+}
+
+.group-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#ray-container {
+    height: clamp(13rem, 42.5vw, 45rem);
+    margin-top: 0.2rem;
+}
+
+#TS9030-fundo01 {
+    position: absolute;
+    width: 95%;
+    z-index: -1;
+}
+
+#logo-ray-danz {
+    position: absolute;
+    width: 41%;
+    top: clamp(0.4rem, 6.5vw, 14rem);
+    left: clamp(1.8rem, 5.7vw, 10rem);
+}
+
+#logo-ray-danz img {
+    width: clamp(9.5rem, 17vw, 16rem);
+    margin-left: -0.35rem;
+}
+
+#logo-ray-danz p {
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 4rem);
+    font-family: Avenir, sans-serif;
+    margin-top: clamp(0.3rem, 0.9vw, 1.5rem);
+    line-height: 1.35;
+}
+
+#dolby-container {
+    margin-top: clamp(0.2rem, 2vw, 3rem);
+    height: clamp(11rem, 35vw, 40rem);
+}
+
+#TS9030-fundo02 {
+    position: absolute;
+    width: 95%;
+    z-index: -1;
+}
+
+#logo-dolby-atmos {
+    position: absolute;
+    width: 35%;
+    top: clamp(0.4rem, 5.4vw, 14rem);
+    left: clamp(1.8rem, 5.7vw, 10rem);
+}
+
+#logo-dolby-atmos img {
+    width: clamp(9.7rem, 17vw, 25rem);
+    margin-left: -0.66rem;
+}
+
+#logo-dolby-atmos p {
+    color: black;
+    font-size: clamp(0.7rem, 1.8vw, 3rem);
+    font-family: Avenir, sans-serif;
+    margin-top: clamp(0.2rem, 0.9vw, 1.5rem);
+    line-height: 1.35;
+}
+
+#watts540-container {
+    margin-top: clamp(0.2rem, 2vw, 3rem);
+    height: clamp(16.5rem, 51.5vw, 55rem);
+}
+
+#TS9030-fundo03 {
+    position: absolute;
+    width: 95%;
+    z-index: -1;
+}
+
+#text-540watts {
+    position: absolute;
+    width: clamp(30%, 27%, 24%);
+    top: clamp(1rem, 7vw, 14rem);
+    right: clamp(2rem, 9vw, 15rem);
+}
+
+#text-540watts h1 {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.3rem, 2.3vw, 5rem);
+    color: black;
+}
+
+#text-540watts p {
+    font-family: Avenir, sans-serif;
+    font-size: clamp(0.7rem, 1.8vw, 4rem);
+    margin-top: clamp(0.5rem, 1rem, 1.5rem);
+    line-height: 1.35;
+    color: black;
+}
+
+#canais-container {
+    margin-top: clamp(0.2rem, 2vw, 3rem);
+    height: clamp(16.5rem, 51.5vw, 55rem);
+    margin-bottom: 4rem;
+}
+
+#TS9030-fundo04 {
+    position: absolute;
+    width: 95%;
+    z-index: -1;
+}
+
+#subwoofer {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+}
+
+#subwoofer img {
+    width: clamp(6rem, 25vw, 30rem);
+    position: absolute;
+    left: clamp(1rem, 8vw, 13rem);
+}
+
+#text-subwoofer {
+    color: white;
+    position: absolute;
+    left: clamp(11rem, 35.5vw, 45rem);
+    top: clamp(1rem, 5vw, 9rem);
+}
+
+#text-subwoofer h1 {
+    font-size: clamp(1.1rem, 1.6vw, 3rem);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#text-subwoofer p {
+    margin-top: clamp(0.5rem, 0.9rem, 2rem);
+    font-size: clamp(0.8rem, 1.2vw, 2.3rem);
+    font-family: Avenir, sans-serif;
+}
+
+#canais {
+    width: 100%;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#canais img {
+    position: absolute;
+    width: 49%;
+    right: clamp(1rem, 6vw, 10rem);
+    bottom: clamp(0.2rem, 2.5vw, 7rem);
+}
+
+#text-canais {
+    width: 22%;
+    position: absolute;
+    bottom: clamp(2rem, 3.5vw, 20rem);
+    left: clamp(1rem, 19vw, 29rem);
+}
+
+#text-canais h1,
+p {
+    color: white;
+}
+
+#text-canais h1 {
+    font-size: clamp(1.1rem, 1.6vw, 3rem);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#text-canais p {
+    margin-top: clamp(0.5rem, 0.9rem, 2rem);
+    font-size: clamp(0.8rem, 1.2vw, 2.3rem);
+    font-family: Avenir, sans-serif;
+}
+
+#conect-container {
+    margin-top: clamp(6rem, 7vw, 8rem);
+    margin-bottom: 6rem;
+    height: clamp(4rem, 7vw, 50rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#conect-text h1 {
+    color: white;
+    font-size: clamp(0.1rem, 2rem, 5rem);
+    font-family: sans-serif;
+    letter-spacing: clamp(0.2rem, 2vw, 0.8rem);
+    border-bottom: 1px solid red;
+    padding-bottom: 0.5rem;
+}
+
+#conect-itens-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#conect-itens-container div {
+    flex: 1;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conect-itens-container div img {
+    width: 100%;
+    max-width: 50vw;
+    margin-bottom: 20px;
+}
+
+#conect-itens-container div p {
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: Avenir, sans-serif;
+}
+
+
+/* #conect-chromecast {
+    width: 34%;
+    padding-top: 0;
+}
+
+#conect-chromecast img {
+    width: clamp(70%, 80%, 85%);
+    height: 50px;
+    object-fit: cover;
+}
+
+#conect-chromecast p {
+    font-size: clamp(0.5rem, 1.3rem, 4rem);
+    margin-top: 2rem;
+    font-family: Avenir, sans-serif;
+    line-height: 1.2;
+}
+
+#conect-google {
+    width: 24%;
+    padding-top: 0;
+    margin-top: -1rem;
+}
+
+#conect-google img {
+    width: clamp(75%, 80%, 85%);
+    margin-left: 0.4rem;
+    height: 50px;
+    object-fit: cover;
+}
+
+#conect-google p {
+    font-size: clamp(0.6rem, 1.3rem, 4rem);
+    margin-top: 1rem;
+    font-family: Avenir, sans-serif;
+    line-height: 1.2;
+}
+
+#conect-apple {
+    width: 35%;
+    padding-top: 1rem;
+}
+
+#conect-apple img {
+    width: 60%;
+    padding-left: 0.2rem;
+    height: 50px;
+    object-fit: cover;
+}
+
+#conect-apple p {
+    font-size: clamp(0.5rem, 1.3rem, 4rem);
+    margin-top: 2rem;
+    font-family: Avenir, sans-serif;
+    line-height: 1.2;
+} */
+
+#sobwoofer-comp {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#sobwoofer-comp img {
+    width: 100%;
+}
+
+#compatibilidade-container {
+    width: 100%;
+    margin-top: 1rem;
+    height: clamp(30rem, 42vw, 55rem);
+    position: relative;
+}
+
+#fundo-comp {
+    width: clamp(25rem, 95%, 71rem);
+    height: 50%;
+    background: gray;
+    border-radius: 1rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#celular-comp img {
+    width: clamp(11rem, 25%, 13rem);
+    position: absolute;
+    top: clamp(2rem, 2vw, 7rem);
+    left: clamp(0.6rem, 1.8vw, 7rem);
+}
+
+#imagem-comp {
+    width: 70%;
+    height: 40%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    margin-right: -40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+#imagem-comp div {
+    display: flex;
+    align-items: center;
+}
+
+#wifi-comp img {
+    width: clamp(7rem, 50%, 9rem);
+    margin-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 2.5rem;
+}
+
+#hdmi-arc-comp img {
+    width: clamp(7rem, 50%, 9rem);
+    margin-left: 1.4rem;
+}
+
+#bluetooth-comp img {
+    width: clamp(8rem, 50%, 9rem);
+    margin-left: 0.2rem;
+}
+
+#down-container {
+    width: 100%;
+    height: clamp(14rem, 45vw, 50rem);
+    margin-top: -1rem;
+    position: relative;
+    margin-bottom: -1rem;
+}
+
+#TS9030-down-fundo {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#design-awards {
+    width: 70%;
+}
+
+#design-awards img {
+    width: clamp(8rem, 25%, 30rem);
+    position: absolute;
+    top: clamp(1rem, 4vw, 9rem);
+    left: clamp(1.2rem, 4vw, 5rem);
+}
+
+#design-awards h1,
+p {
+    color: white;
+}
+
+#design-awards div {
+    position: absolute;
+    bottom: clamp(2rem, 5vw, 8rem);
+    left: clamp(1rem, 6vw, 7rem);
+}
+
+#design-awards h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: clamp(1rem, 3vw, 6rem);
+}
+
+#design-awards p {
+    font-family: Avenir, sans-serif;
+    font-size: clamp(0.6rem, 2.4vw, 4rem);
+    margin-top: clamp(0.6rem, 1vw, 1rem);
+}
+
+#recursos-container {
+    background: white;
+    width: 100%;
+    height: clamp(63rem, 65vw, 65rem);
+}
+
+.title-foorter {
+    padding-top: clamp(3rem, 5vw, 7rem);
+    padding-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: clamp(1.4rem, 2vw, 4rem);
+    color: gray;
+}
+
+.title-foorter div {
+    border-bottom: 3px solid red;
+}
+
+.title-foorter div h1 {
+    letter-spacing: 0.5rem;
+}
+
+#cont-rerc {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#recursos-container #recursos-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#recursos-container #recursos-content .recurso-item {
+    padding: 0 2rem;
+    display: flex;
+    float: left;
+    flex: 1 1 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #c2bcbc;
+    margin-bottom: 1.5rem;
+}
+
+#item-list-rec2 div {
+    width: 6rem;
+}
+
+#item-list-rec2 img {
+    margin-left: 1rem;
+    width: 70%;
+}
+
+@media screen and (max-width:400px) {
+    #text-header {
+        width: clamp(50%, 53%, 56%);
+    }
+    #text-header p {
+        font-size: clamp(0.8rem, 1.1vw, 2.3rem);
+    }
+    #fundo-comp {
+        width: clamp(25rem, 80%, 71rem);
+        height: 70%;
+        border-radius: 1.5rem;
+        left: 55%;
+        margin-right: -45%;
+    }
+    #celular-comp img {
+        width: clamp(13rem, 25%, 13rem);
+        top: clamp(2.5rem, 3vw, 5rem);
+        left: clamp(0.6rem, 1.8vw, 7rem);
+    }
+    #imagem-comp {
+        width: 55%;
+        height: 65%;
+        top: 50%;
+        left: 67%;
+        margin-right: -33%;
+        position: absolute;
+    }
+    #imagem-comp div {
+        display: flex;
+        align-items: center;
+    }
+    #wifi-comp img {
+        position: absolute;
+        top: 2rem;
+        left: 0.5rem;
+        width: clamp(7rem, 50%, 9rem);
+        margin-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 2.5rem;
+    }
+    #hdmi-arc-comp img {
+        position: absolute;
+        top: 8.5rem;
+        left: 2.1rem;
+        width: clamp(7rem, 50%, 9rem);
+        margin-left: 1.4rem;
+    }
+    #bluetooth-comp img {
+        position: absolute;
+        top: 15rem;
+        left: 3.5rem;
+        width: clamp(8rem, 50%, 9rem);
+        margin-left: 0.2rem;
+    }
+    #down-container {
+        margin-bottom: -1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #recursos-container {
+        background: white;
+        width: 100%;
+        height: clamp(35rem, 110vw, 65rem);
+    }
+    #recursos-container #recursos-content .recurso-item {
+        flex: 1 1 50%;
+    }
+    #recursos-container #recursos-content .recurso-item img {
+        max-width: clamp(4rem, 18vw, 30rem);
+        margin-bottom: 1rem;
+    }
+    #recursos-container #recursos-content #item-list-rec1 {
+        border-right: none;
+    }
+    #recursos-container #recursos-content #item-list-rec3 {
+        border-right: none;
+    }
+    #recursos-container #recursos-content #item-list-rec5 {
+        border-right: none;
+    }
+    #recursos-container #recursos-content #item-list-rec7 {
+        border-right: none;
+    }
+    #recursos-container #recursos-content #item-list-rec9 {
+        border-right: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #text-header {
+        font-size: clamp(1.3rem, 1.3vw, 1.9rem);
+        right: clamp(4rem, 5vw, 8rem);
+    }
+    #conect-chromecast p {
+        line-height: 1.4;
+    }
+    #conect-google p {
+        line-height: 1.4;
+    }
+    #conect-apple p {
+        line-height: 1.4;
+    }
+    #compatibilidade-container {
+        margin-top: clamp(3rem, 3vw, 6rem);
+    }
+    #fundo-comp {
+        width: clamp(30rem, 80%, 900rem);
+        height: 45%;
+        margin-left: clamp(5rem, 3vw, 7rem);
+    }
+    #celular-comp img {
+        width: clamp(14rem, 37%, 16rem);
+        margin-left: clamp(2rem, 3vw, 4rem);
+    }
+    #wifi-comp img {
+        width: clamp(10rem, 13vw, 15rem);
+        padding: 0;
+        margin-right: clamp(2rem, 2vw, 3rem);
+    }
+    #hdmi-arc-comp img {
+        width: clamp(10rem, 13vw, 15rem);
+        padding: 0;
+        margin-right: clamp(2rem, 2vw, 3rem);
+    }
+    #bluetooth-comp img {
+        width: clamp(10rem, 13vw, 15rem);
+        padding: 0;
+        margin-right: clamp(2rem, 2vw, 3rem);
+    }
+    #down-container {
+        margin-top: 1rem;
+    }
+    #recursos-container {
+        background: white;
+        width: 100%;
+        height: clamp(30rem, 28vw, 30rem);
+    }
+    #recursos-container #recursos-content .recurso-item {
+        flex: 3 3 20%;
+    }
+    #recursos-container #recursos-content .recurso-item img {
+        max-width: clamp(8rem, 13vw, 14rem);
+        margin-bottom: 1rem;
+    }
+    #recursos-container #recursos-content #item-list-rec4 {
+        border-right: none;
+    }
+    #recursos-container #recursos-content #item-list-rec9 {
+        border-right: none;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    #text-header {
+        font-size: clamp(1rem, 1.4vw, 1.75rem);
+        width: clamp(50%, 60%, 65%);
+        right: clamp(4rem, 5vw, 8rem);
+        line-height: 1.55;
+    }
+    #ray-container {
+        height: clamp(13rem, 35.5vw, 51.5rem);
+    }
+    #TS9030-fundo01 {
+        width: 80%;
+    }
+    #logo-ray-danz {
+        width: 30%;
+        top: clamp(10rem, 10vw, 16rem);
+        left: clamp(5rem, 15vw, 24rem);
+    }
+    #logo-ray-danz img {
+        width: clamp(10rem, 14vw, 20rem);
+    }
+    #logo-ray-danz p {
+        font-size: clamp(1rem, 1.2vw, 2rem);
+        margin-top: clamp(0.4rem, 2vw, 2rem);
+        line-height: 1.45;
+    }
+    #dolby-container {
+        height: clamp(13rem, 29vw, 42rem);
+    }
+    #TS9030-fundo02 {
+        width: 80%;
+    }
+    #logo-dolby-atmos {
+        width: 23%;
+        top: clamp(1rem, 7vw, 8rem);
+        left: clamp(5rem, 14vw, 20rem);
+    }
+    #logo-dolby-atmos img {
+        width: clamp(12rem, 17vw, 23rem);
+    }
+    #logo-dolby-atmos p {
+        font-size: clamp(1rem, 1.2vw, 2rem);
+        margin-top: clamp(1rem, 1vw, 1.5rem);
+        line-height: 1.55;
+    }
+    #watts540-container {
+        margin-top: clamp(0.2rem, 2vw, 3rem);
+        height: clamp(16.5rem, 43vw, 62rem);
+    }
+    #TS9030-fundo03 {
+        width: 80%;
+    }
+    #text-540watts {
+        width: clamp(13rem, 25%, 40rem);
+        top: clamp(1rem, 10vw, 15rem);
+        right: clamp(3rem, 18vw, 25rem);
+    }
+    #text-540watts h1 {
+        font-size: clamp(1rem, 1.8vw, 3rem);
+    }
+    #text-540watts p {
+        font-size: clamp(0.5rem, 1.2vw, 1.7rem);
+        margin-top: clamp(0.5rem, 1rem, 1.5rem);
+    }
+    #canais-container {
+        margin-top: clamp(0.2rem, 2.2vw, 4rem);
+        height: clamp(16.5rem, 43vw, 62.1rem);
+        margin-bottom: 4rem;
+    }
+    #TS9030-fundo04 {
+        width: 80%;
+    }
+    #subwoofer {
+        width: 85%;
+        top: 1.5rem;
+    }
+    #subwoofer img {
+        width: clamp(8rem, 24vw, 29rem);
+        left: clamp(1rem, 8vw, 13rem);
+    }
+    #text-subwoofer {
+        left: clamp(12rem, 35vw, 45rem);
+        top: clamp(1rem, 4vw, 8rem);
+    }
+    #canais {
+        width: 85%;
+        right: clamp(5rem, 8vw, 9rem);
+        bottom: clamp(1rem, 1vw, 2rem);
+    }
+    #canais img {
+        width: clamp(10rem, 45%, 48rem);
+        right: clamp(1rem, 8vw, 12rem);
+        bottom: clamp(1rem, 2.5vw, 6rem);
+    }
+    #text-canais {
+        bottom: clamp(1rem, 5vw, 18rem);
+        left: clamp(1rem, 21vw, 30rem);
+    }
+    #conect-container {
+        margin-top: 8rem;
+    }
+    #conect-text h1 {
+        font-size: clamp(1rem, 3vw, 5rem);
+    }
+    #conect-item-container div {
+        margin: clamp(1rem, 1.1vw, 2rem);
+    }
+    #conect-google {
+        margin-top: -2rem;
+    }
+    #sobwoofer-comp {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #compatibilidade-container {
+        margin-top: clamp(1rem, 2vw, 3em);
+    }
+    #fundo-comp {
+        width: clamp(35rem, 80%, 700rem);
+        height: 44%;
+        margin-left: clamp(4rem, 5vw, 8rem);
+    }
+    #celular-comp img {
+        width: clamp(13rem, 35%, 17rem);
+        margin-left: clamp(8rem, 6vw, 12rem);
+        top: clamp(3.5rem, 7vw, 10rem);
+    }
+    #wifi-comp img {
+        width: clamp(14rem, 18vw, 20rem);
+        padding: 0;
+        margin-right: clamp(2rem, 2vw, 3rem);
+    }
+    #hdmi-arc-comp img {
+        width: clamp(14rem, 18vw, 20rem);
+        padding: 0;
+        margin-right: clamp(2rem, 2vw, 3rem);
+    }
+    #bluetooth-comp img {
+        width: clamp(14rem, 18vw, 20rem);
+        padding: 0;
+        margin-right: clamp(2rem, 2vw, 3rem);
+    }
+    #down-container {
+        height: clamp(14rem, 45vw, 65.5rem);
+        margin-bottom: -1rem;
+        margin-top: -1.4rem;
+    }
+    #design-awards img {
+        width: clamp(9rem, 12%, 15rem);
+        top: clamp(8rem, 15vw, 21rem);
+        left: clamp(7rem, 15vw, 27rem);
+    }
+    #design-awards h1 {
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
+    }
+    #design-awards p {
+        font-size: clamp(0.8rem, 1vw, 1rem);
+    }
+    #design-awards div {
+        bottom: clamp(10rem, 13vw, 20rem);
+        left: clamp(7rem, 15vw, 27rem);
+    }
+    #recursos-container #recursos-content {
+        padding: 5rem;
+        padding-bottom: 10rem;
+    }
+    #recursos-container #recursos-content .recurso-item {
+        flex: 5 5 10%;
+    }
+    #recursos-container #recursos-content .recurso-item img {
+        max-width: clamp(10rem, 13vw, 15rem);
+        margin-bottom: 1rem;
+    }
+    #recursos-container {
+        height: clamp(30rem, 45vw, 45rem);
+    }
+    #conect-itens-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    #conect-itens-container div {
+        flex: 1;
+        margin: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #conect-itens-container div img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+    #conect-itens-container div p {
+        line-height: 1.2;
+        font-size: 14px;
+        font-family: Avenir, sans-serif;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #page-landing {
+        width: 100%;
+    }
+    #top-container {
+        height: clamp(13rem, 38vw, 55rem);
+    }
+    #logotipo-top {
+        width: clamp(10rem, 30vw, 38rem);
+        left: clamp(3rem, 19vw, 24rem);
+        top: clamp(2rem, 2.9vw, 4rem);
+    }
+    #text-header {
+        font-size: clamp(1rem, 1.3vw, 1.65rem);
+        width: clamp(50%, 55%, 60%);
+        right: clamp(6rem, 11vw, 13rem);
+    }
+    #conect-goolge img {
+        margin-top: -1rem;
+        width: clamp(60%, 75%, 83%);
+    }
+    #down-container {
+        margin-top: -3rem;
+    }
+    #design-awards div {
+        bottom: clamp(10rem, 14vw, 24rem);
+        left: clamp(7rem, 15vw, 27rem);
+    }
+    #recursos-container #recursos-content {
+        padding: 5rem;
+        padding-bottom: 0;
+    }
+    #recursos-container #recursos-content .recurso-item {
+        flex: 5 5 10%;
+    }
+    #recursos-container #recursos-content .recurso-item img {
+        max-width: clamp(10rem, 14vw, 22rem);
+        margin-bottom: 1rem;
+    }
+    #recursos-container {
+        height: clamp(30rem, 45vw, 45rem);
+    }
+    #item-list-rec2 div {
+        width: 6rem;
+    }
+    #item-list-rec2 img {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1372px) {
+    #item-list-rec2 div {
+        width: clamp(12rem, 12vw, 18.8rem);
+    }
+    #item-list-rec2 img {
+        margin-left: clamp(4rem, 7.5vw, 5rem);
+        width: clamp(40%, 45%, 55%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #page-landing {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    #recursos-container {
+        height: clamp(30rem, 45vw, 50rem);
+    }
+    #recursos-container #recursos-content .recurso-item {
+        flex: 5 5 10%;
+    }
+    #recursos-container #recursos-content .recurso-item img {
+        max-width: clamp(19rem, 20vw, 22rem);
+        margin-bottom: 1rem;
+    }
+    #recursos-content {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}
